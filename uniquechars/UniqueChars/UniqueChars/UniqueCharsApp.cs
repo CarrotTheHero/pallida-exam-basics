@@ -10,7 +10,13 @@ namespace UniqueChars
     {
         public string UniqueCharacters(string input)
         {
-            input = "borso";
+            var CharsWithoutDouble = new List<char>();
+
+            foreach (char letter in input)
+            {
+                CharsWithoutDouble.Add(letter);
+                CharsWithoutDouble.Sort();
+            }
 
             return input;
         }

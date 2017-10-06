@@ -26,5 +26,21 @@ namespace UniqueCharsTest
 
             Assert.AreEqual(LetterByLetter, uniqueCharsApp.UniqueCharacters("borso"));
         }
+
+        [Test]
+        public void SortedList()
+        {
+            UniqueCharsApp uniqueCharsApp = new UniqueCharsApp();
+            var LettersWithoutDouble = new List<char>()
+            {
+                {'b'},
+                {'o'},
+                {'o'},
+                {'r'},
+                {'s'},
+            };
+
+            Assert.AreEqual(LettersWithoutDouble, uniqueCharsApp.UniqueCharacters("borso"));
+        }
     }
 }
