@@ -17,7 +17,7 @@ namespace UniqueChars
                 CharsWithoutDouble.Add(letter);
                 CharsWithoutDouble.Sort();
             }
-
+            // no input return, i want to return the list elements....
             return input;
         }
     }
