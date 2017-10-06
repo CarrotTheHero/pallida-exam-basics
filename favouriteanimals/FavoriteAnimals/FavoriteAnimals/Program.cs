@@ -11,16 +11,20 @@ namespace FavoriteAnimals
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Press G to start: ");
-            string animal = Console.ReadLine();
-            if (!string.IsNullOrEmpty(animal))
+            string input = "List:";
+            if (!string.IsNullOrEmpty(input))
             {
-                Console.WriteLine("Write in your favorite animals: ");
-                animal = Console.ReadLine();
-                string[] animals = { animal };
-                File.WriteAllLines("./favourites.txt", animals);
+                Console.WriteLine("What is your favoritve animal: ");
+                input = Console.ReadLine();
             }
-            Console.ReadLine();
+            else
+            {
+                return;
+            }
+                using (StreamWriter writer = File.AppendText("favourites.txt"))
+                {
+                    writer.WriteLine(input);
+                }
         }
     }
 }
