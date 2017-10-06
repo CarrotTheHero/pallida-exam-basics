@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace FavoriteAnimals
 {
@@ -11,7 +7,7 @@ namespace FavoriteAnimals
     {
         static void Main(string[] args)
         {
-            string input = "List:";
+            string input = " ";
             while (!string.IsNullOrEmpty(input))
             {
                 Console.WriteLine("What is your favoritve animal: ");
