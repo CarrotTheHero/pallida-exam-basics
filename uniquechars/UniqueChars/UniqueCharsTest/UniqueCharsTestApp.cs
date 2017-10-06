@@ -17,21 +17,15 @@ namespace UniqueCharsTest
             UniqueCharsApp uniqueCharsApp = new UniqueCharsApp();
             string output = "borso";
 
-            Assert.AreEqual(output, uniqueCharsApp.UniqueCharacters("borso"));
+            Assert.AreEqual(output, uniqueCharsApp.UniqueCharacter("borso"));
         }
 
         [Test]
         public void SortedList()
         {
             UniqueCharsApp uniqueCharsApp = new UniqueCharsApp();
-            var LettersOrdered = new List<char>()
-            {
-                {'b'},
-                {'o'},
-                {'o'},
-                {'r'},
-                {'s'},
-            };
+            var LettersOrdered = "bors";
+            
 
             Assert.AreEqual(LettersOrdered, uniqueCharsApp.UniqueCharacters("borso"));
         }

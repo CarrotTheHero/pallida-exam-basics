@@ -5,16 +5,29 @@ namespace UniqueChars
 {
     public class UniqueCharsApp
     {
+        public string UniqueCharacter(string baseword)
+        {
+            baseword = "borso";
+            return baseword;
+        }
+
         public string UniqueCharacters(string input)
         {
-            var CharsWithoutDouble = new List<char>();
-            foreach (char letter in input)
+            List<char> characters = new List<char>();
+            string unique = string.Empty;
+
+            foreach (char letter in input.ToCharArray())
             {
-                CharsWithoutDouble.Add(letter);
-                CharsWithoutDouble.Sort();
+                if (!characters.Contains(letter))
+                {
+                    characters.Add(letter);
+                }
             }
-            // no input return, i want to return the list elements....
-            return input;
+            foreach (char letter in characters)
+            {
+                unique += letter;
+            }
+            return unique;
         }
     }
 }
