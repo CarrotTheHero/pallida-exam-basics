@@ -12,8 +12,8 @@ namespace Candyyeaaay
         {
             HowManySugarNeeds = 5;
             Price = 10;
-        }
-
-            
+            Count = 0;
+            SweetType = "Lollipop";
+        }           
     }
 }

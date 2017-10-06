@@ -6,15 +6,32 @@ using System.Threading.Tasks;
 
 namespace Candyyeaaay
 {
-    class Sweets
+    class Sweets : CandyShop
     {
-        protected int HowManySugarNeeds;
-        int Price;
-        int Raise;
+        public int HowManySugarNeeds;
+        public int Price;
+        public int Raise;
+        public int Count;
+        protected string SweetType;
 
         public void Raising(int percent)
         {
             Price += Price * Raise/100;
+        }
+        public void BuySugar(int Price)
+        {
+            Price--;
+            sugar++;
+        }
+        public void CreatingSweets(string SweetType)
+        {
+            Count++;
+            HowManySugarNeeds--;
+        }
+        public void Sell(string SweetType)
+        {
+            Count--;
+            Price++;
         }
     }
 }
