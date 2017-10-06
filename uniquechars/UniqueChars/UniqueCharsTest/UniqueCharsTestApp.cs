@@ -15,23 +15,16 @@ namespace UniqueCharsTest
         public void ListHasElements()
         {
             UniqueCharsApp uniqueCharsApp = new UniqueCharsApp();
-            var LetterByLetter = new List<char>()
-            {
-                {'b'},
-                {'o'},
-                {'r'},
-                {'s'},
-                {'o'},
-            };
+            string output = "borso";
 
-            Assert.AreEqual(LetterByLetter, uniqueCharsApp.UniqueCharacters("borso"));
+            Assert.AreEqual(output, uniqueCharsApp.UniqueCharacters("borso"));
         }
 
         [Test]
         public void SortedList()
         {
             UniqueCharsApp uniqueCharsApp = new UniqueCharsApp();
-            var LettersWithoutDouble = new List<char>()
+            var LettersOrdered = new List<char>()
             {
                 {'b'},
                 {'o'},
@@ -40,7 +33,7 @@ namespace UniqueCharsTest
                 {'s'},
             };
 
-            Assert.AreEqual(LettersWithoutDouble, uniqueCharsApp.UniqueCharacters("borso"));
+            Assert.AreEqual(LettersOrdered, uniqueCharsApp.UniqueCharacters("borso"));
         }
     }
 }
