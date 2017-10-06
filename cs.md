@@ -32,8 +32,11 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+
+As I know, in C# Methods and Functions are quiet the same. A Method is a Function with a Class.
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+
+Whenever a class or struct is created, its constructor is called. Constructors enable the programmer to set default values,
+limit instantiation, and write code that is flexible and easy to read.
