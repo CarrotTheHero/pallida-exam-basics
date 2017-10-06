@@ -21,13 +21,20 @@ namespace UniqueCharsTest
         }
 
         [Test]
-        public void SortedList()
+        public void SortedWord()
         {
             UniqueCharsApp uniqueCharsApp = new UniqueCharsApp();
             var LettersOrdered = "bors";
             
 
             Assert.AreEqual(LettersOrdered, uniqueCharsApp.UniqueCharacters("borso"));
+        }
+
+        [Test]
+        public void WriteThemSeparetly()
+        {
+            string lastoutput = "";
+            //("b", "o", "r", "s") it should look like this. code is not ready for this yet
         }
     }
 }
