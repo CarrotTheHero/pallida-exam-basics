@@ -8,5 +8,11 @@ namespace UniqueChars
 {
     public class UniqueCharsApp
     {
+        public string UniqueCharacters(string input)
+        {
+            input = "borso";
+
+            return input;
+        }
     }
 }
